@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Recommendation System</title>
+    <style>
+        body {
+            background-color: #171717;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-top: 50px;
+        }
+
+        .btn-primary {
+            margin-top: 10px;
+            color: #A52A2A;
+            background-color: #171717;
+            border-color: #A52A2A;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+       .image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border: 2px solid #ddd;
+    margin-top: 10px;
+}
+
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4"><b>Music Recommendation System</b></h1>
+        <label for="songInput">Type or Select a Song from the dropdown:</label><br><br>
+
+        <select id="songInput" class="form-control mb-3" style="background-color:#2E2E2E; color: white; border-color:#2E2E2E;">
+            <option value="Song1">Song1</option>
+            <option value="Song2">Song2</option>
+            <option value="Song3">Song3</option>
+            <option value="Song4">Song4</option>
+            <option value="Song5">Song5</option>
+        </select>
+
+        <button onclick="getRecommendations()" class="btn btn-primary">Show Recommendations</button>
+
+        <ul id="recommendations" class="list-group"></ul>
+    </div>
+
+    <div class="container">
+        <div class="movie">
+            <div class="image-container">
+                <div>
+                    <div class="caption">Tu Milta Hai Mujhe</div>
+                    <img src="file:///C:/Users/simon/Downloads/Tu-Milta-Hai-Mujhe-Hindi-2021-20211008053008-500x500.jpg" alt="love" class="image">
+                </div><div>
+                    <div class="caption">Sea Of Love</div>
+                    <img src="file:///C:/Users/simon/Downloads/love3.jpg" alt="love" class="image">
+                </div>
+
+
+                <div>
+                    <div class="caption">All Of Me</div>
+                    <img src="file:///C:/Users/simon/Downloads/love1.jpg" alt="love1" class="image">
+                </div><div>
+                    <div class="caption">Perfect</div>
+                    <img src="file:///C:/Users/simon/Downloads/Ed_Sheeran_Perfect_Single_cover.jpg" alt="love1" class="image">
+                </div>
+
+                <div>
+                    <div class="caption">I Will Always Love You</div>
+                    <img src="file:///C:/Users/simon/Downloads/love.jpg" alt="love3" class="image">
+                </div>    
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="movie">
+            <div class="image-container">
+                <div>
+                    <div class="caption">If You Believe</div>
+                    <img src="file:///C:/Users/simon/Downloads/hqdefault.jpg" alt="love" class="image">
+                </div><div>
+                    <div class="caption">Believe</div>
+                    <img src="file:///C:/Users/simon/Downloads/ab67616d0000b27335c9fc6d14bb7e95847df10e.jpg" alt="love" class="image">
+                </div>
+
+
+                <div>
+                    <div class="caption">Strong Enough</div>
+                    <img src="file:///C:/Users/simon/Downloads/sddefault.jpg" alt="love1" class="image">
+                </div><div>
+                    <div class="caption">Believer</div>
+                    <img src="file:///C:/Users/simon/Downloads/mqdefault.jpg" alt="love1" class="image">
+                </div>
+
+                <div>
+                    <div class="caption">I Don't Care</div>
+                    <img src="file:///C:/Users/simon/Downloads/artworks-000545114697-1qdl3p-t500x500.jpg" alt="love3" class="image">
+                </div>    
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
